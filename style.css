@@ -65,6 +65,23 @@ button:hover {
   border-bottom: 1px solid #ddd;
 }
 
+@media (max-width: 768px) {
+  button {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  th, td {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 #resultados th {
   background-color: #f2f2f2;
   font-weight: normal;
