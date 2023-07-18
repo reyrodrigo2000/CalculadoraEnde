@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Tarifas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Tarifas de Consumo</h1>
+  <div id="container">
+    <label for="lectura_anterior">Lectura anterior:</label>
+    <input type="number" id="lectura_anterior" placeholder="Ingrese la lectura anterior">
+
+    <label for="lectura_actual">Lectura actual:</label>
+    <input type="number" id="lectura_actual" placeholder="Ingrese la lectura actual">
+
+    <button onclick="calcularYMostrarTarifa()">Calcular</button>
+
+    <table id="resultados" style="display: none;">
+      <tr>
+        <th>Concepto</th>
+        <th>Valor </th>
+      </tr>
+      <tr>
+        <td>Consumo de energía</td>
+        <td id="consumo_kwh" > "kwh" </td>
+      </tr>
+      <tr>
+        <td>Tarifa correspondiente</td>
+        <td id="tarifa_consumo"></td>
+      </tr>
+      <tr>
+        <td>Tasa de alumbrado público</td>
+        <td id="tasa_alumbrado"></td>
+      </tr>
+      <tr>
+        <td>Tarifa de aseo urbano</td>
+        <td id="tarifa_aseo"></td>
+      </tr>
+      <tr>
+        <td>Total a pagar</td>
+        <td id="total"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
