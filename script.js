@@ -20,10 +20,10 @@ function calcularYMostrarTarifa() {
   var total = tarifaConsumo + tasaAlumbrado + tarifaAseo;
 
   document.getElementById("consumo_kwh").textContent = consumoKwh.toFixed(2) + " kWh";
-  document.getElementById("tarifa_consumo").textContent = tarifaConsumo.toFixed(2);
-  document.getElementById("tasa_alumbrado").textContent = tasaAlumbrado.toFixed(2);
-  document.getElementById("tarifa_aseo").textContent = tarifaAseo.toFixed(2);
-  document.getElementById("total").textContent = total.toFixed(2);
+  document.getElementById("tarifa_consumo").textContent = tarifaConsumo.toFixed(2) + " " + "Bs";
+  document.getElementById("tasa_alumbrado").textContent = tasaAlumbrado.toFixed(2)  + " " + "Bs" ;
+  document.getElementById("tarifa_aseo").textContent = tarifaAseo.toFixed(2)  + " " + "Bs";
+  document.getElementById("total").textContent = total.toFixed(2)  + " " + "Bs";
 
   document.getElementById("resultados").style.display = "table";
 }
