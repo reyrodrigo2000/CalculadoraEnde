@@ -65,6 +65,15 @@ button:hover {
   border-bottom: 1px solid #ddd;
 }
 
+
+
+
+#resultados th {
+  background-color: #f2f2f2;
+  font-weight: normal;
+}
+
+
 @media (max-width: 768px) {
   button {
     display: none;
@@ -79,10 +88,4 @@ button:hover {
     display: block;
     width: 100%;
   }
-}
-
-
-#resultados th {
-  background-color: #f2f2f2;
-  font-weight: normal;
 }
